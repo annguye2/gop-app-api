@@ -46,6 +46,6 @@ class ShareprojectsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def shareproject_params
-      params.require(:shareproject).permit(:name, :description, :comment, :feature_url, :creator)
+      params.require(:shareproject).permit(:name, :description, :comment, :feature_url, :creator, :category)
     end
 end
